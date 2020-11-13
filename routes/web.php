@@ -23,10 +23,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('test', 'TestController', ['names' => [
     'index'   => 'test.index',
-    // 'create'  => 'test.create',
-    // 'store'   => 'test.store',
-    // 'show'    => 'test.show',
-    // 'edit'    => 'test.edit',
-    // 'update'  => 'test.update',
-    // 'destroy' => 'test.destroy'
 ]]);
