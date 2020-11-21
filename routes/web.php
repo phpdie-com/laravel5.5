@@ -19,7 +19,8 @@ Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
-
+//演示获取目录路径
+Route::get('/path', 'PathController@index');
 
 Route::resource('test', 'TestController', ['names' => [
     'index'   => 'test.index',

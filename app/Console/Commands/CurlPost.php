@@ -40,6 +40,11 @@ class CurlPost extends Command
         //使用方法 命令行输入 php artisan curl:post www.baidu.com --data="age=3&name=zhangsan"
         $url = $this->argument('url');
         $data = $this->option('data');
-        echo '请求url:'. $url.PHP_EOL.'请求参数:'.$data.PHP_EOL;
+        $msg='请求url:'. $url.PHP_EOL.
+            '请求参数:'.$data.PHP_EOL.
+            '请求时间：'.date('Y-m-d H:i:s').PHP_EOL;
+        echo $msg;
+        //把这个$msg写入到文件,演示任务计划更明显
+        file_put_contents(public_path().'/schedule.log',$msg.PHP_EOL,FILE_APPEND);
     }
 }
