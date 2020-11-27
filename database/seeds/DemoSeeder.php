@@ -13,6 +13,7 @@ class DemoSeeder extends Seeder
      */
     public function run()
     {
+        //如果没有email字段就添加
         if (!Schema::hasColumn('demo', 'email')) {
             Schema::table('demo', function (Blueprint $table) {
                 $table->string('email');

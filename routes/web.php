@@ -31,3 +31,5 @@ Route::resource('test', 'TestController', ['names' => [
     // 'update'  => 'test.update',
     // 'destroy' => 'test.destroy'
 ]]);
+
+Route::resource('form', 'FormController');
