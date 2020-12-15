@@ -15,7 +15,7 @@ class FormController extends Controller
 
         $row = $model::find(1);
         $row->name = 'susan';
-        $row->save();//存到数据库里变成了大写的susan了
+        $row->save();//存到数据库里变成了大写的SUSAN了
         //如果是用$model->where('id',1)->update(['name'=>'abc']);则达不到修改器的效果
         $data = $model::find(1)->toArray();//find方法用->或者::都一样
         echo '更新后';
