@@ -33,3 +33,4 @@ Route::resource('test', 'TestController', ['names' => [
 ]]);
 
 Route::resource('form', 'FormController');
+Route::resource('debug', 'DebugController');

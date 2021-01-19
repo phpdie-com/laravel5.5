@@ -28,4 +28,7 @@ class Form extends Model
         $status=['禁用状态','启用状态'];
         return $status[$value];
     }
+    public static function showMsg(){
+        echo 'Hello Everyone!';
+    }
 }
