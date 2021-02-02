@@ -30,7 +30,7 @@ class ArticleController extends AdminController
         $grid->column('cateid','分类');
         $grid->column('content','内容');
         $grid->column('create_uid','创建人');
-        $grid->column('status','启用状态');
+        $grid->column('status','启用状态')->switch();
         return $grid;
     }
 
