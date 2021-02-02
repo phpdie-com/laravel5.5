@@ -29,7 +29,7 @@ class ArticleController extends AdminController
         $grid->column('title','标题')->width(100);
         $grid->column('cateid','分类');
         $grid->column('content','内容');
-        $grid->column('create_uid','创建人');
+        $grid->column('create_uid','创建人')->width(400);//我是func1分支开发的
         $grid->column('status','启用状态')->switch();
         return $grid;
     }
