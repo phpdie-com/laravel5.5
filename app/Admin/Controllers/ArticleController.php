@@ -31,7 +31,7 @@ class ArticleController extends AdminController
         $grid->column('content','内容')->width(400);
         $grid->column('create_uid','创建人');
         $grid->column('status','启用状态')->switch();
-        return $grid;//张三开发功能A第一天
+        return $grid;//张三开发功能A第一天 张三开发功能A第二天
     }
 
     /**
