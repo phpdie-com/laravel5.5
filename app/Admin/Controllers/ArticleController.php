@@ -32,6 +32,8 @@ class ArticleController extends AdminController
         $grid->column('create_uid','创建人');
         $grid->column('status','启用状态')->switch();//我是开发分支
         return $grid;//张三开发功能A第一天 张三开发功能A第二天
+        //开发functionB 
+        //开发functionB 
     }
 
     /**
