@@ -26,9 +26,9 @@ class ArticleController extends AdminController
     {
         $grid = new Grid(new Article());
         $grid->column('id','id');
-        $grid->column('title','标题');
+        $grid->column('title','标题')->width(100);
         $grid->column('cateid','分类');
-        $grid->column('content','内容');
+        $grid->column('content','内容')->width(400);
         $grid->column('create_uid','创建人');
         $grid->column('status','启用状态')->switch();
         return $grid;
